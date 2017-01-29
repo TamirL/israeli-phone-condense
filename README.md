@@ -4,6 +4,7 @@ This package removes all decorations from an Israeli phone number to keep is in 
 ## Examples
 ### Removes international prefix
 +972521234567 --> 0521234567
+
 ### Remove Irrelevant characters
 (052) 1234567 --> 0521234567
 
