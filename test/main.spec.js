@@ -1,5 +1,5 @@
-import {expect} from 'chai';
 import israeliPhoneNormalize from '../src';
+import {expect} from 'chai';
 
 describe('Israeli Phone Normalize', () => {
   describe('exports', () => {
@@ -9,8 +9,20 @@ describe('Israeli Phone Normalize', () => {
   });
 
   describe('logic', () => {
+    it('should keep normalize number', () => {
+      const normalized = israeliPhoneNormalize('0521234567');
+
+      expect(normalized).to.equal('0521234567');
+    });
+
     it('should remove Israeli international prefix', () => {
       const normalized = israeliPhoneNormalize('+972521234567');
+
+      expect(normalized).to.equal('0521234567');
+    });
+
+    it('should remove poorly formatted Israeli international prefix', () => {
+      const normalized = israeliPhoneNormalize('+9720521234567');
 
       expect(normalized).to.equal('0521234567');
     });
