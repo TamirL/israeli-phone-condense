@@ -1,6 +1,6 @@
 {
   "name": "normalize-israeli-phone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package removes all decorations from an Israeli phone number to keep is in a consistant format",
   "main": "lib/index.js",
   "scripts": {
