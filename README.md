@@ -18,6 +18,5 @@ var normalizeIsraeliPhone = require("normalize-israeli-phone");
 
 var normalized = normalizeIsraeliPhone("+97252-1234567"); 
 // normalized = "0521234567"
-
 ```
 
